@@ -6,6 +6,8 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '我的技术博客',
   description: '一个使用 VuePress 构建的现代化技术博客',
+  
+  base: '/myblog/',
 
   bundler: viteBundler(),
   

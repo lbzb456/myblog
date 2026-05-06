@@ -1,0 +1,20 @@
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "description": "A modern blog built with VuePress",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
+  },
+  "dependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.28",
+    "@vuepress/theme-default": "^2.0.0-rc.0",
+    "vue": "^3.4.0",
+    "vuepress": "^2.0.0-rc.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "sass-embedded": "^1.99.0"
+  }
+}

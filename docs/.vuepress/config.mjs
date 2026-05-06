@@ -30,7 +30,8 @@ export default defineUserConfig({
         children: [
           '/posts/vue3-reactivity.html',
           '/posts/python-decorators.html',
-          '/posts/javascript-async.html'
+          '/posts/javascript-async.html',
+          '/posts/ai-blog-creator.html'
         ]
       }
     ]

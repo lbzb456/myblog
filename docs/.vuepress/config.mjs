@@ -4,8 +4,8 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: '我的技术博客',
-  description: '一个使用 VuePress 构建的现代化技术博客',
+  title: '行者小二的技术博客',
+  description: '行者小二的技术博客 - 分享技术与生活',
   
   base: '/myblog/',
 

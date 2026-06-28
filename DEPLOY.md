@@ -114,5 +114,4 @@ blog.example.com
 ## 访问地址
 
 部署完成后，网站可通过以下地址访问：
-- 默认域名：`https://username.github.io/`
-- 自定义域名：`https://blog.example.com/`
+- GitHub Pages：[https://lbzb456.github.io/myblog/](https://lbzb456.github.io/myblog/)

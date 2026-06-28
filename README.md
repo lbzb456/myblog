@@ -1,6 +1,8 @@
-# VuePress Blog
+# 行者小二的技术博客
 
 一个使用 VuePress 构建的现代化技术博客。
+
+**访问地址**: [https://lbzb456.github.io/myblog/](https://lbzb456.github.io/myblog/)
 
 ## 功能特性
 

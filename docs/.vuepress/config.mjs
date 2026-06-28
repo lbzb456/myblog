@@ -34,7 +34,8 @@ export default defineUserConfig({
           '/posts/ai-blog-creator.html'
         ]
       }
-    ]
+    ],
+    contributors: false
   }),
 
   head: [

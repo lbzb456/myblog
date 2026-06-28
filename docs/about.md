@@ -3,7 +3,7 @@ title: 关于我
 ---
 ## 个人简介
 
-你好！我是一名全栈开发者，热衷于分享技术和编程经验。
+你好！我是 **行者小二**，一名全栈开发者，热衷于分享技术和编程经验。
 
 ## 技术栈
 
@@ -14,8 +14,9 @@ title: 关于我
 
 ## 联系方式
 
-- GitHub: [github.com](https://github.com)
-- Email: example@example.com
+- GitHub: [github.com/lbzb456](https://github.com/lbzb456)
+- Email: lbzb456@gmail.com
+- 博客: [https://lbzb456.github.io/myblog/](https://lbzb456.github.io/myblog/)
 
 ## 关于博客
 

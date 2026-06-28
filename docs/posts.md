@@ -13,4 +13,4 @@ title: 文章列表
 
 ## 随想
 
-- [欢迎来到我的技术博客](./_posts/welcome.md)
+- [欢迎来到行者小二的技术博客](./_posts/welcome.md)

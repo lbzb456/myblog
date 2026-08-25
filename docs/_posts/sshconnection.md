@@ -1,4 +1,4 @@
----
+﻿---
 title: SSH 连接 RK3588 控制板完整指南
 date: 2026-05-06
 categories:
@@ -24,11 +24,11 @@ tags:
 
 RK3588 是瑞芯微（Rockchip）推出的一款高性能 8 核 ARM 处理器，广泛应用于嵌入式开发、边缘计算、人工智能等领域。在无人船、机器人等场景中，常作为主控板使用。
 
-![RK3588 控制板](image/sshconnection/1786242354320.png)
+![RK3588 控制板](/images/sshconnection/1786242354320.png)
 
 控制板接口丰富，支持多种外设扩展。
 
-![控制板接口](image/sshconnection/1786242376016.png)
+![控制板接口](/images/sshconnection/1786242376016.png)
 
 ## 三、使用 SSH 连接 RK3588
 
@@ -66,11 +66,11 @@ ssh root@192.168.1.100
 
 也可使用NoMachine进行局域网带界面的远程。
 
-![MobaXterm 下载页面](image/sshconnection/1786243204337.png)
+![MobaXterm 下载页面](/images/sshconnection/1786243204337.png)
 
 下载 **deb 格式**（注：MobaXterm 实际为 Windows 工具，此处下载页面提供不同版本）的安装包。
 
-![MobaXterm 安装包](image/sshconnection/1786243331317.png)
+![MobaXterm 安装包](/images/sshconnection/1786243331317.png)
 
 #### MobaXterm 主要功能：
 
@@ -90,7 +90,7 @@ ssh root@192.168.1.100
 2. **使用 SFTP**：连接成功后，左侧会自动显示文件管理器面板
 3. **拖拽传输**：直接将文件从 Windows 资源管理器拖到左侧面板，即可上传到 RK3588 控制板
 
-![通过 MobaXterm 传文件到 RK3588](image/sshconnection/1786243331317.png)
+![通过 MobaXterm 传文件到 RK3588](/images/sshconnection/1786243331317.png)
 
 ### 常用文件传输命令（可选）
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Linux 虚拟机硬盘扩展与挂载指南
 date: 2026-08-25
 categories:
@@ -17,7 +17,7 @@ tags:
 
 关机后在虚拟机设置中扩展磁盘容量。
 
-![关机后扩展磁盘容量](image/linux_disk_part/1787560815985.png)
+![关机后扩展磁盘容量](/images/linux_disk_part/1787560815985.png)
 
 本例将磁盘从 20G 扩展到 24G。
 
@@ -25,18 +25,18 @@ tags:
 
 在虚拟机设置中添加一块新的虚拟硬盘。
 
-![添加新硬盘](image/linux_disk_part/1787560873392.png)
+![添加新硬盘](/images/linux_disk_part/1787560873392.png)
 
 ## 二、使用 Gparted 进行分区
 
 启动虚拟机后，使用 Gparted 分区工具对新扩展的硬盘空间进行分区。
 
-![Gparted 分区工具](image/linux_disk_part/1787561058328.png)
+![Gparted 分区工具](/images/linux_disk_part/1787561058328.png)
 
 - **sda**：扩展即可，在图形界面中可以看到扩展后的硬盘空间
 - **sdb**：新建硬盘，需要先扩展分区表
 
-![分区操作](image/linux_disk_part/1787561129323.png)
+![分区操作](/images/linux_disk_part/1787561129323.png)
 
 ## 三、sdb 手动挂载
 
@@ -135,7 +135,7 @@ drwx------ 2 root root 16384 8月  24 16:22 lost+found
 - `sdb1` 是 20G 的 ext4 分区，已挂载到 `/mnt/sdb`
 - 当前为空盘（只有 `lost+found`），可用空间约 19G
 
-![挂载成功](image/linux_disk_part/1787561352372.png)
+![挂载成功](/images/linux_disk_part/1787561352372.png)
 
 ## 四、设置开机自动挂载
 
@@ -194,7 +194,7 @@ sudo chown -R $USER:$USER /mnt/sdb
 
 挂载到 `/media` 即可正常使用图形界面操作硬盘。GNOME 文件管理器会自动显示 `/media` 下的设备，如果希望它像 U 盘一样出现在左侧边栏：
 
-![文件管理器显示硬盘](image/linux_disk_part/1787620782973.png)
+![文件管理器显示硬盘](/images/linux_disk_part/1787620782973.png)
 
 两个硬盘都正常显示。
 

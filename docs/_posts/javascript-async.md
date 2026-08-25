@@ -130,3 +130,9 @@ async function safeOperation() {
 | async/await | 同步风格 | 需要理解 Promise |
 
 选择合适的异步编程方式可以让您的代码更加清晰和可维护。
+
+---
+
+## 评论
+
+<GiscusComment />

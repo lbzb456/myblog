@@ -2,7 +2,7 @@
 title: Vue3 响应式原理深度解析
 date: 2026-05-05
 categories:
-  - 技术
+  - 前端技术
 tags:
   - Vue
   - JavaScript
@@ -60,3 +60,9 @@ const reactive = (target) => {
 ## 总结
 
 Vue3 的响应式系统更加完善和强大，Proxy 的引入解决了 Vue2 中的很多问题。
+
+---
+
+## 评论
+
+<GiscusComment />

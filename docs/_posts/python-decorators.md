@@ -2,7 +2,7 @@
 title: Python 装饰器完全指南
 date: 2026-05-04
 categories:
-  - 技术
+  - 后端开发
 tags:
   - Python
   - 装饰器
@@ -62,3 +62,9 @@ def timing(func):
 ## 总结
 
 装饰器是 Python 中非常实用的功能，可以用于日志记录、性能计时、权限验证等。掌握装饰器可以让你的代码更加简洁和优雅。
+
+---
+
+## 评论
+
+<GiscusComment />

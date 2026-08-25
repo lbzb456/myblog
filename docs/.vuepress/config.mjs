@@ -26,16 +26,37 @@ export default defineUserConfig({
         link: '/posts/welcome.html'
       },
       {
-        text: '技术文章',
+        text: '前端技术',
         children: [
           '/posts/vue3-reactivity.html',
-          '/posts/python-decorators.html',
-          '/posts/javascript-async.html',
-          '/posts/ai-blog-creator.html'
+          '/posts/javascript-async.html'
+        ]
+      },
+      {
+        text: '后端开发',
+        children: [
+          '/posts/python-decorators.html'
+        ]
+      },
+      {
+        text: '无人船技术',
+        children: [
+          '/posts/sshconnection.html'
+        ]
+      },
+      {
+        text: '研发实战',
+        children: [
+          '/posts/ai-blog-creator.html',
+          '/posts/linux_disk_part.html'
         ]
       }
     ],
-    contributors: false
+    contributors: false,
+    // 启用搜索功能
+    search: true,
+    // 搜索占位符文本
+    searchMaxSuggestions: 10
   }),
 
   head: [

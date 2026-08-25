@@ -1,4 +1,4 @@
-﻿---
+---
 title: SSH 连接 RK3588 控制板完整指南
 date: 2026-05-06
 categories:

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Linux 虚拟机硬盘扩展与挂载指南
 date: 2026-08-25
 categories:

@@ -41,7 +41,10 @@ export default defineUserConfig({
       {
         text: '无人船技术',
         children: [
-          '/posts/sshconnection.html'
+          '/posts/sshconnection.html',
+          '/posts/ros-reading-notes.html',
+          '/posts/usv-classification-rules.html',
+          '/posts/ship-software-guideline.html'
         ]
       },
       {

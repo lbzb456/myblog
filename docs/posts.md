@@ -19,6 +19,9 @@ title: 文章列表
 ## 无人船技术
 
 - [SSH 连接 RK3588 控制板完整指南](./_posts/sshconnection.md)
+- [《ROS机器人开发实践》第1~2章读书笔记：初识ROS与架构拆解](./_posts/ros-reading-notes.md)
+- [无人船入级路径分析：CCS《智能船舶规范2026》与《自主货物运输船舶指南》解读](./_posts/usv-classification-rules.md)
+- [《船用软件安全及可靠性评估指南》GD008-2025 解读：船用软件如何过关](./_posts/ship-software-guideline.md)
 
 ## 研发实战
 

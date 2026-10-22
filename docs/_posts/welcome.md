@@ -42,3 +42,7 @@ console.log('Hello, World!');
 ---
 
 感谢访问我的博客！
+
+---
+
+*本文由 AI Agent 辅助创作*

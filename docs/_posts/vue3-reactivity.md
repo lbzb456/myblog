@@ -66,3 +66,7 @@ Vue3 的响应式系统更加完善和强大，Proxy 的引入解决了 Vue2 中
 ## 评论
 
 <GiscusComment />
+
+---
+
+*本文由 AI Agent 辅助创作*

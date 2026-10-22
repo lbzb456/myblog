@@ -217,6 +217,46 @@ sudo sed -i 's|/mnt/sdb|/media/sdb|g' /etc/fstab
 sudo mount -a
 ```
 
+
+
+访问权限问题
+
+![](https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F8b5527b7ca776ad6cf9518a6ac1c0fbc973ea63fb63599c1d2bfab0d663c44d2?filename=image.png&sig=GOOOHUo0iGwVvRwnKI4pGux5EOmAxvDgVScVWGOTwEA=&t=p)
+
+更改所有权
+
+```
+lu@lu-virtual-machine:/media/sdb$ lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0 531.5M  1 loop /snap/gnome-42-2204/263
+loop2    7:2    0 349.7M  1 loop /snap/gnome-3-38-2004/143
+loop3    7:3    0    46M  1 loop /snap/snap-store/638
+loop4    7:4    0  63.3M  1 loop /snap/core20/1828
+loop5    7:5    0  49.9M  1 loop /snap/snapd/18357
+loop6    7:6    0    74M  1 loop /snap/core22/2411
+loop7    7:7    0  50.1M  1 loop /snap/snapd/27406
+loop8    7:8    0  12.2M  1 loop /snap/snap-store/1216
+loop9    7:9    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop10   7:10   0 346.3M  1 loop /snap/gnome-3-38-2004/119
+sda      8:0    0    24G  0 disk 
+├─sda1   8:1    0   512M  0 part /boot/efi
+├─sda2   8:2    0     1K  0 part 
+└─sda5   8:5    0  23.5G  0 part /
+sdb      8:16   0    20G  0 disk 
+└─sdb1   8:17   0    20G  0 part /media/sdb
+sr0     11:0    1   4.1G  0 rom  /media/lu/Ubuntu 20.04.6 LTS amd641
+lu@lu-virtual-machine:/media/sdb$ df -h | grep sdb
+/dev/sdb1        20G   24K   19G    1% /mnt/sdb
+lu@lu-virtual-machine:/media/sdb$ sudo blkid /dev/sdb1
+[sudo] lu 的密码： 
+/dev/sdb1: UUID="80e8ccfc-1dc5-4d68-8ad1-6f3cd442734c" TYPE="ext4" PARTUUID="2526ae80-84fd-4a01-9a8b-ac13585f9112"
+lu@lu-virtual-machine:/media/sdb$ sudo chown -R lu:lu /media/sdb
+lu@lu-virtual-machine:/media/sdb$ chmod -R u+rwx /media/sdb
+lu@lu-virtual-machine:/media/sdb$ 
+
+```
+
 ## 七、总结
 
 本文完整介绍了 Linux 虚拟机硬盘扩展的两种方法（扩展原磁盘 + 新增硬盘），并详细说明了使用 Gparted 分区、手动挂载、开机自动挂载以及图形界面显示的全流程。关键要点：
@@ -236,3 +276,32 @@ sudo mount -a
 ## 评论
 
 <GiscusComment />
+
+```
+lu@lu-virtual-machine:/media/sdb$ lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0     4K  1 loop /snap/bare/5
+loop1    7:1    0 531.5M  1 loop /snap/gnome-42-2204/263
+loop2    7:2    0 349.7M  1 loop /snap/gnome-3-38-2004/143
+loop3    7:3    0    46M  1 loop /snap/snap-store/638
+loop4    7:4    0  63.3M  1 loop /snap/core20/1828
+loop5    7:5    0  49.9M  1 loop /snap/snapd/18357
+loop6    7:6    0    74M  1 loop /snap/core22/2411
+loop7    7:7    0  50.1M  1 loop /snap/snapd/27406
+loop8    7:8    0  12.2M  1 loop /snap/snap-store/1216
+loop9    7:9    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop10   7:10   0 346.3M  1 loop /snap/gnome-3-38-2004/119
+sda      8:0    0    24G  0 disk 
+├─sda1   8:1    0   512M  0 part /boot/efi
+├─sda2   8:2    0     1K  0 part 
+└─sda5   8:5    0  23.5G  0 part /
+sdb      8:16   0    20G  0 disk 
+└─sdb1   8:17   0    20G  0 part /media/sdb
+sr0     11:0    1   4.1G  0 rom  /media/lu/Ubuntu 20.04.6 LTS amd641
+lu@lu-virtual-machine:/media/sdb$ df -h | grep sdb
+/dev/sdb1        20G   24K   19G    1% /mnt/sdb
+```
+
+---
+
+*本文由 AI Agent 辅助创作*

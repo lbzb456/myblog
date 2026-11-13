@@ -27,3 +27,4 @@ title: 文章列表
 
 - [使用 AI Agent 创建个人博客：完整指南](./_posts/ai-blog-creator.md)
 - [Linux 虚拟机硬盘扩展与挂载指南](./_posts/linux_disk_part.md)
+- [Ubuntu 20.04 虚拟机开机无网排查实录：从「未托管」到默认路由缺失](./_posts/ubuntu-vm-no-network.md)

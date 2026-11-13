@@ -51,7 +51,8 @@ export default defineUserConfig({
         text: '研发实战',
         children: [
           '/posts/ai-blog-creator.html',
-          '/posts/linux_disk_part.html'
+          '/posts/linux_disk_part.html',
+          '/posts/ubuntu-vm-no-network.html'
         ]
       }
     ],

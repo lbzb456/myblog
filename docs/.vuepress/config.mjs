@@ -43,6 +43,7 @@ export default defineUserConfig({
         children: [
           '/posts/sshconnection.html',
           '/posts/ros-reading-notes.html',
+          '/posts/ros-turtlesim-first-demo.html',
           '/posts/usv-classification-rules.html',
           '/posts/ship-software-guideline.html'
         ]
